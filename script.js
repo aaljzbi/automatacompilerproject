@@ -34,6 +34,27 @@ dfaBtn.addEventListener('click', () => {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   
 if (selected === 'option1') {
+// start state
+    ctx.beginPath();
+    ctx.arc(70, 370, 25, 0, 2 * Math.PI);
+    ctx.stroke();
+    ctx.font="bold 64px Arial";
+    ctx.fillText("-", 57.5, 385);
+    ctx.beginPath();
+    ctx.moveTo(30, 370);
+    ctx.lineTo(30, 45);
+    ctx.stroke();
+    ctx.moveTo(30, 370);
+    ctx.lineTo(45, 370);
+    ctx.stroke();
+    ctx.moveTo(30, 45);
+    ctx.lineTo(45, 45);
+    ctx.stroke();
+    ctx.moveTo(40, 40);
+    ctx.lineTo(50, 45);
+    ctx.lineTo(40, 50);
+    ctx.fill()
+
 //CIRCLE 1 CODE
   // Draw a circle
     ctx.beginPath();
@@ -539,6 +560,27 @@ if (selected === 'option1') {
     ctx.fillText ("b", 875, 140)
 
 } else if (selected === 'option2') {
+
+// start state
+    ctx.beginPath();
+    ctx.arc(70, 370, 25, 0, 2 * Math.PI);
+    ctx.stroke();
+    ctx.font="bold 64px Arial";
+    ctx.fillText("-", 57.5, 385);
+    ctx.beginPath();
+    ctx.moveTo(30, 370);
+    ctx.lineTo(30, 200);
+    ctx.stroke();
+    ctx.moveTo(30, 370);
+    ctx.lineTo(45, 370);
+    ctx.stroke();
+    ctx.moveTo(30, 200);
+    ctx.lineTo(45, 200);
+    ctx.stroke();
+    ctx.moveTo(35, 195);
+    ctx.lineTo(45, 200);
+    ctx.lineTo(35, 205);
+    ctx.fill()
 //CIRCLE 1
     //Circle n font
     ctx.beginPath();
@@ -602,6 +644,7 @@ if (selected === 'option1') {
      ctx.lineTo(275, 175);
      ctx.lineTo(280, 170);
      ctx.fill()
+
 
 //CIRCLE 3
     //Circle n font
@@ -668,6 +711,20 @@ if (selected === 'option1') {
      ctx.moveTo(440, 195);
      ctx.lineTo(450, 200);
      ctx.lineTo(440, 205);
+     ctx.fill();
+     //loop
+     ctx.moveTo(365, 222);
+     ctx.lineTo(365, 245);
+     ctx.stroke();
+     ctx.moveTo(365, 245);
+     ctx.lineTo(375, 245);
+     ctx.stroke();
+     ctx.moveTo(375, 230);
+     ctx.lineTo(375, 245);
+     ctx.stroke();
+     ctx.moveTo(370, 235);
+     ctx.lineTo(375, 225);
+     ctx.lineTo(380, 235);
      ctx.fill();
 
 // CIRCLE 7
@@ -801,7 +858,23 @@ if (selected === 'option1') {
      ctx.lineTo(700, 200);
      ctx.lineTo(710, 205);
      ctx.fill();
-    ctx.fillText ("b", 700, 190)
-
+    
+// 1'S AND 0'S
+    ctx.fillText("1", 90, 120); // 1 to 4
+    ctx.fillText("0", 90, 270); // 1 to 3
+    ctx.fillText("1", 150, 200); // 3 to 4
+    ctx.fillText("0", 190, 200); // 4 to 3
+    ctx.fillText("0", 250, 270); // 3 to 5
+    ctx.fillText("1", 250, 120); // 4 to 5
+    ctx.fillText("0,1", 310, 190); // 5 to 6
+    ctx.fillText("0", 365, 260); // 6 loop
+    ctx.fillText("0", 420, 190); // 6 to 7
+    ctx.fillText("0", 500, 120); // 7 to 8
+    ctx.fillText("1", 500, 270); // 7 to 9
+    ctx.fillText("0", 560, 200); // 9 to 8
+    ctx.fillText("1", 625, 120); // 8 to 2
+    ctx.fillText("1", 625, 270); // 9 to 2
+    ctx.fillText("0", 475, 40); // 8 to 6
+    ctx.fillText("0,1", 725, 205); // 2 loop
   }
 });
